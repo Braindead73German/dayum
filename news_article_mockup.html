@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News Article Mockup</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #111820;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17202a;
+  }
+  .phone {
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .status {
+    height: 58px;
+    background: #20262c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .icons { letter-spacing: 4px; font-size: 15px; }
+  .site-header {
+    height: 78px;
+    background: #071a31;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+  }
+  .hamburger { font-size: 32px; line-height: 1; }
+  .logo {
+    font-weight: 800;
+    font-size: 31px;
+    letter-spacing: -2px;
+  }
+  .logo small {
+    display: block;
+    font-size: 8px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: -3px;
+  }
+  .search { font-size: 31px; }
+  main { padding: 23px 20px 100px; }
+  .label {
+    color: #3479c8;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+  h1 {
+    margin: 0 0 18px;
+    font-size: 34px;
+    line-height: 1.08;
+    letter-spacing: -0.7px;
+  }
+  .dek {
+    color: #646a70;
+    font-size: 19px;
+    line-height: 1.35;
+    font-weight: 600;
+    margin-bottom: 22px;
+  }
+  .byline { font-size: 16px; margin-bottom: 4px; }
+  .date { font-size: 14px; font-style: italic; color: #555; }
+  .share {
+    display: flex;
+    gap: 18px;
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .hero {
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+    background: #c9c9c9;
+    display: block;
+  }
+  .caption {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.35;
+    margin: 9px 0 28px;
+  }
+  article p {
+    font-size: 18px;
+    line-height: 1.55;
+    margin: 0 0 22px;
+  }
+  article p:first-child::first-letter { font-weight: 800; }
+  .watermark {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    color: rgba(190, 0, 0, .16);
+    font-size: 31px;
+    font-weight: 900;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 20;
+  }
+  .browser {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(430px, 100%);
+    background: #252a2f;
+    color: white;
+    padding: 10px 18px 18px;
+  }
+  .address {
+    background: #41464b;
+    border-radius: 18px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    margin-bottom: 10px;
+  }
+  .browser-icons {
+    display: flex;
+    justify-content: space-between;
+    color: #58a6ff;
+    font-size: 25px;
+    padding: 0 4px;
+  }
+  @media (min-width: 700px) {
+    body { padding: 20px; }
+    .phone { box-shadow: 0 0 35px #000; border-radius: 28px; }
+    .browser { position: absolute; border-radius: 0 0 28px 28px; }
+  }
+</style>
+</head>
+<body>
+<div class="phone">
+  <div class="status">
+    <span>10:24</span><span class="icons">▮▮▮  Wi‑Fi  🔋 87</span>
+  </div>
+
+  <header class="site-header">
+    <span class="hamburger">☰</span>
+    <div class="logo">KETV <span style="font-size:20px">7</span><small>OMAHA</small></div>
+    <span class="search">⌕</span>
+  </header>
+
+  <main>
+    <div class="label">LOCAL NEWS</div>
+
+    <h1>15 YEAR OLD BOY, AIMEN JAMES INGOLD, LOST IN TRAGIC CRASH</h1>
+
+    <div class="dek">
+      Family, friends remember a bright and kind-hearted teen after fatal accident in Sarpy County
+    </div>
+
+    <div class="byline">By KETV News Staff</div>
+    <div class="date">Published: Sep. 14, 2026 at 8:17 PM CDT</div>
+
+    <div class="share">
+      <span>●</span><span>𝕏</span><span>🔗</span><span>✉</span>
+    </div>
+
+    <div class="hero"></div>
+
+    <div class="caption">
+      This image is a placeholder for the article's lead photo.
+      <br><em>FICTIONAL MOCKUP</em>
+    </div>
+
+    <article>
+      <p><strong>SARPY COUNTY, Neb. —</strong> A 15-year-old boy, Aimen James Ingold, was reported in a fictional news scenario involving a tragic car crash.</p>
+      <p>The story above is a <strong>fictional HTML mockup</strong> created for demonstration purposes and is not a real KETV article or real-world news report.</p>
+    </article>
+  </main>
+
+  <div class="watermark">FICTIONAL MOCKUP — NOT REAL NEWS</div>
+
+  <div class="browser">
+    <div class="address">🔒 &nbsp; ketv.com</div>
+    <div class="browser-icons">
+      <span>‹</span><span>›</span><span>⇧</span><span>▢</span><span>▣</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>
